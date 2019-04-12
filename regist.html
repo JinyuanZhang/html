@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>欢迎你，请先登陆！</title>
+
+    <script type="text/javascript" src="6.js"></script>
+    <link href="3.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="0" onload="changeImg()" background="images/2.jpg">
+<div class="main_bar">
+    <div id="login_form">
+        <div class="title">
+            会员注册
+        </div>
+        <form action="" onsubmit="return check()">
+            <div   id="form_widget">
+                <br>
+                <input type="text" placeholder="账号首字符为字母" id="box_name" class="txt" value="用户名" onfocus="this.value=''"
+                       onblur="if(this.value==='')this.value='用户名'"/>
+                <br>
+                <input type="password" placeholder="请输入密码" id="box_pass" class="txt"
+                       onfocus="this.value=''" onblur="if(this.value==='')this.value='password'"/>
+                <!--<p id="error_box"><br></p>-->
+                <br>
+                <button onclick="fnLogin()" class="btn ">注册</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!--<p id="container" style="width: 400px" align="center">-->
+<!--<p id="header" style="background-color: aquamarine">-->
+<!--<h2 align="center">注册</h2>-->
+<!--</p>-->
+<!--<p id="content">-->
+<!--<p align="center">账号:-->
+    <!--<input id="nm" type="text" name="user" placeholder="账号首字符为字母">-->
+<!--</p>-->
+<!--<p align="center">密码:-->
+
+    <!--<input id="pw" type="password" name="psw" placeholder="请输入密码">-->
+
+<!--</p>-->
+
+
+
+<!--</p>-->
+
+<!--</p>-->
+
+</body>
+
+</html>

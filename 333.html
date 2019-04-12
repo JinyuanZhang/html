@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>酒店管理系统</title>
+    <meta charset="utf-8">
+    <link href="3.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="3.js"></script>
+</head>
+<body leftmargin="0" onload="changeImg()" background="images/1.jpg">
+
+<div class="main_bar">
+    <div id="login_form">
+        <div class="title">
+            会员登录
+        </div>
+        <form action="" onsubmit="return check()">
+            <div id="form_widget">
+                <br>
+                <input type="text" placeholder="请输入用户名" id="box_name" class="txt" value="用户名" onfocus="this.value=''"
+                       onblur="if(this.value==='')this.value='用户名'"/>
+                <br>
+                <br>
+                <input type="password" placeholder="请输入密码" id="box_pass" class="txt" value="password"
+                       onfocus="this.value=''" onblur="if(this.value==='')this.value='password'"/>
+                <br>
+                <input type="text" id="xcode" placeholder="验证码" value="验证码" onfocus="this.value=''"
+                       onblur="if(this.value==='')this.value='验证码'"/><span id="code" title="看不清，换一张"></span>
+                <br>
+                <br>
+                <input type="submit" value="登录" class="btn" onmouseover="this.style.backgroundColor='#FF8D00'"
+                       onmouseout="this.style.backgroundColor='#FC5628'">
+                <br>
+                <br>
+                <div id="search_pass_link">
+                    <!--<a href="#"><span class="sz">忘记密码</span></a>&nbsp&nbsp&nbsp-->
+                    <a href="http://localhost:63342/html/regist.html?_ijt=imphtkpcjmcvn6krgeqdkdto6c">
+                        <span class="sz">立即注册</span></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
